@@ -4,9 +4,9 @@ import { BrowserRouter as Router,
     Switch,
     NavLink
 } from 'react-router-dom';
-import mainPage from '../Pages/mainPage';
-import moviePage from '../Pages/moviePage';
-import purchasePage from '../Pages/purchasePage';
+import MainPage from '../Pages/mainPage';
+import MoviePage from '../Pages/moviePage';
+import PurchasePage from '../Pages/purchasePage';
 
 
 export default class AppRouting extends Component {
@@ -21,9 +21,9 @@ export default class AppRouting extends Component {
                 </nav>
 
                 <Switch>
-                    <Route path="/" component={mainPage} exact />
-                    <Route path="/movie" component={moviePage} />
-                    <Route path="/purchase" component={purchasePage} />
+                    <Route path="/" component={MainPage} exact />
+                    <Route path="/movie" component={MoviePage} />
+                    <Route path="/purchase" component={PurchasePage} />
                 </Switch>
             </Router>
         )

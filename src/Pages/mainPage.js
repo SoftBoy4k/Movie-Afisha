@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import MoviesStore from '../store/moviesStore';
 
-export default class mainPage extends Component {
+export default class MainPage extends Component {
     render() {
         return (
-            <div>
-                <h1>Main Page</h1>
-            </div>
+            <MoviesStore/>
         )
     }
 }
