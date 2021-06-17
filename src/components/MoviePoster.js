@@ -1,15 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-export default class MoviePoster extends Component {
-    render() {
-        const {id, name, img, price, priceVip, fromDate, toDate} = this.props;
-        return (
-            <div id = {id}>
-                <img src={img} />
-                <h4>{name}</h4>
-                <p>c {fromDate} по {toDate}</p>
-                <p>от {price}р. до {priceVip}р.</p>
-            </div>
-        )
-    }
+const MvPoster = ({id, name, img, price, priceVip, fromDate, toDate, history}) => {
+    return(
+        <div id = {id} onClick={() => {
+            history.push(`/movie/${name}`)
+        }}>
+            <img src={img} />
+            <h4>{name}</h4>
+            <p>c {fromDate} по {toDate}</p>
+            <p>от {price}р. до {priceVip}р.</p>
+        </div>
+    )
 }
+
+const MoviePoster = withRouter(MvPoster);
+export {MoviePoster}
