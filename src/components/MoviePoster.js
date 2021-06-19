@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 const MvPoster = ({id, name, img, price, priceVip, fromDate, toDate, history}) => {
     return(
         <div id = {id} onClick={() => {
-            history.push(`/movie/${name}`)
+            history.push(`/${name}`)
         }}>
             <img src={img} />
             <h4>{name}</h4>

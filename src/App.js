@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import AppRouting from './components/AppRouting';
+import { Header } from './components/Header/Header';
+import MainPage from './Pages/mainPage';
+import { Switch, Route } from 'react-router-dom'
+
 
 
 export default class App extends Component {
     render(){
         return (
             <>
-                <AppRouting />
+                <Header />
+
+                <Switch>
+                    <Route path="/" component={MainPage} exact />
+                </Switch>
             </>
         );
     }
