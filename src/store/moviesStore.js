@@ -64,5 +64,38 @@ export const movies = [
         ageRestrictions: 16,
         genre: "Анимация", 
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/5z7WutP5x.jpg"
+    },
+    {id: 7,
+        name: "Телохранитель жены киллера",
+        price: 6.50, 
+        priceVip: 13, 
+        fromDate: "15 июля", 
+        toDate: "3 августа",
+        duration: 120,
+        ageRestrictions: 16,
+        genre: "Анимация", 
+        img: "https://abws.bycard.by/uploads/events/thumbs/300x430/3A7JppHxN.jpg"
+    },
+    {id: 8,
+        name: "Лука",
+        price: 6.50, 
+        priceVip: 13, 
+        fromDate: "1 июля", 
+        toDate: "20 июля",
+        duration: 120,
+        ageRestrictions: 16,
+        genre: "Анимация", 
+        img: "https://abws.bycard.by/uploads/events/thumbs/300x430/58Ntzhlyp.jpg"
+    },
+    {id: 9,
+        name: "Красный призрак",
+        price: 6.50, 
+        priceVip: 13, 
+        fromDate: "1 июля", 
+        toDate: "20 июля",
+        duration: 120,
+        ageRestrictions: 16,
+        genre: "Анимация", 
+        img: "https://abws.bycard.by/uploads/events/thumbs/300x430/2lfwDbEBL.jpg"
     }
 ]
