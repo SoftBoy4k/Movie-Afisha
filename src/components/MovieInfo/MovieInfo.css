@@ -1,0 +1,33 @@
+.movie-info{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.movie-info__img{
+    cursor: default;
+}
+.movie-info__text-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-info__text{
+    margin: 20px 0;
+}
+
+.movie-info__name{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.value{
+    text-align: end;
+}
+
+.content{
+    margin: 0 40px;
+}
