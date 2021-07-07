@@ -8,6 +8,9 @@ export const movies = [
         duration: 120,
         ageRestrictions: 16,
         genre: "Анимация",
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'], 
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/9hP8dVHet.jpg"
     },
     {id: 2,
@@ -19,6 +22,9 @@ export const movies = [
         duration: 120,
         ageRestrictions: 16, 
         genre: "Анимация",
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'], 
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/6KXE61nt7.jpg"
     },
     {id: 3,
@@ -30,6 +36,9 @@ export const movies = [
         duration: 120,
         ageRestrictions: 16,
         genre: "Анимация", 
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'], 
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/9AnPNev5V.jpg"
     },
     {id: 4,
@@ -40,7 +49,10 @@ export const movies = [
         toDate: "20 июля",
         duration: 120,
         ageRestrictions: 16,
-        genre: "Анимация", 
+        genre: "Анимация",
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'],  
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/3sWBuGCGv.jpg"
     },
     {id: 5,
@@ -51,7 +63,10 @@ export const movies = [
         toDate: "20 июля",
         duration: 120,
         ageRestrictions: 16,
-        genre: "Анимация",  
+        genre: "Анимация",
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'], 
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/5fPf05f7R.jpg"
     },
     {id: 6,
@@ -62,7 +77,10 @@ export const movies = [
         toDate: "20 июля",
         duration: 120,
         ageRestrictions: 16,
-        genre: "Анимация", 
+        genre: "Анимация",
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'],  
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/5z7WutP5x.jpg"
     },
     {id: 7,
@@ -73,7 +91,10 @@ export const movies = [
         toDate: "3 августа",
         duration: 120,
         ageRestrictions: 16,
-        genre: "Анимация", 
+        genre: "Анимация",
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'], 
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/3A7JppHxN.jpg"
     },
     {id: 8,
@@ -84,7 +105,10 @@ export const movies = [
         toDate: "20 июля",
         duration: 120,
         ageRestrictions: 16,
-        genre: "Анимация", 
+        genre: "Анимация",
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'], 
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/58Ntzhlyp.jpg"
     },
     {id: 9,
@@ -95,7 +119,10 @@ export const movies = [
         toDate: "20 июля",
         duration: 120,
         ageRestrictions: 16,
-        genre: "Анимация", 
+        genre: "Анимация",
+        cinimaKalinina: ['10.40', '13.20', '16.35'],
+        cinimaOctober: ['10.20', '13.35', '16.40'],
+        cinimaMir: ['10.35', '13.40', '16.20'], 
         img: "https://abws.bycard.by/uploads/events/thumbs/300x430/2lfwDbEBL.jpg"
     }
 ]

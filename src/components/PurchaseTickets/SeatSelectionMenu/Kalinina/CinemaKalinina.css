@@ -1,0 +1,56 @@
+.seat-place{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.seat-place__numbers  p{
+    margin-bottom: 10px;
+}
+
+.seat-place__place{
+    width: 90%;
+}
+
+.place-row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.span{
+    visibility: hidden;
+}
+
+.place{
+    font-size: 11px;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.place:hover .span{
+    visibility: visible;
+}
+
+.place:hover{
+    background-color: #FFF27E;
+}
+
+.place:active .span{
+    visibility: visible;
+}
+
+.activeE{
+    background-color: #FFF27E;
+    visibility: visible;
+}
+
+.activeE .span{
+    visibility: visible;
+}

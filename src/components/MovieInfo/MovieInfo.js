@@ -1,7 +1,20 @@
 import React from 'react';
+import { Cinemas } from '../Cinemas/Cinemas';
 import './MovieInfo.css'
 
-export const MovieInfo = ({name, img, price, priceVip, fromDate, toDate, duration, ageRestrictions, genre}) => {
+export const MovieInfo = ({name,
+                        img, 
+                        price, 
+                        priceVip, 
+                        fromDate, 
+                        toDate, 
+                        duration, 
+                        ageRestrictions, 
+                        genre,
+                        cinimaKalinina,
+                        cinimaOctober,
+                        cinimaMir,
+                    }) => {
     return (
         <>
             <h2 className='movie-info__name'>{name}</h2>
@@ -26,6 +39,8 @@ export const MovieInfo = ({name, img, price, priceVip, fromDate, toDate, duratio
                     </div>
                 </div>
             </div>
+
+            <Cinemas kalinina = {cinimaKalinina} october = {cinimaOctober} mir={cinimaMir}/>
         </>
     )
 }
