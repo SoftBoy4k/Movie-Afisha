@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {movies} from '../../store/moviesStore';
 import {MoviePoster} from '../../components/MoviePoster/MoviePoster';
-import {Calendar}  from '../../components/Calendar/Calendar'
+import Calendar  from '../../components/Calendar/index'
 import './MainPage.css'
 
 export default class MainPage extends Component {
@@ -10,12 +10,20 @@ export default class MainPage extends Component {
 
         this.state = {
             movies: movies,
+            date: null
         }
     }
+
+    handleDateChange = date => this.setState({ date });
+
     render() {
+        const { date } = this.state;
         return (
             <>
-                <Calendar/>
+                <div className="calendar">
+                    {date ? <p>Выбранная дата: {date.toLocaleDateString()}</p> : <p>Выберите дату:</p>}
+                    <Calendar onChange={this.handleDateChange}/>
+                </div>
                 <div className="movie">
                     {this.state.movies.map(({id, ...otherProps}) => <MoviePoster key={id} {...otherProps}/>)}
                 </div>

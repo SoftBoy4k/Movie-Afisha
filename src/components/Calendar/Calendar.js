@@ -1,60 +1,74 @@
-import React from 'react';
-import { CardDay } from './CardDay/CardDay';
-import './Calendar.css'
-import leftArrow from './imgForCalendar/left-arrow.png'
-import rightArrow from './imgForCalendar/right-arrow.png'
+const DAYS_IN_WEEK = 7;
 
-function creatingDate (n=0) {
-    const dateToday = new Date();
-    const arrDate = [];
-    for(let i = 0; i < n; i++){
-        let day = whatDay(dateToday.getDay() + i);
-        let date = dateToday.getDate() + i; 
-        let month = whatMonth(dateToday.getMonth());
-        arrDate.push([day, date, month[0]])
-    }
-    return arrDate;
-}
+const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-function whatDay (day) {
-    day = ++day;
-    const DAY = day <= 7 ? day : day % 7 === 0 ? 7 : day % 7;
-    switch (DAY) {
-        case 1: return "Вс";
-        case 2: return "Пн";
-        case 3: return "Вт";
-        case 4: return "Ср";
-        case 5: return "Чт";
-        case 6: return "Пт";
-        case 7: return "Сб";  
-    }
-}
+const WEEK_DAYS_FROM_MONDAY = [6, 0, 1, 2, 3, 4, 5];
 
-function whatMonth (month) {
-    switch (month) {
-        case 0: return ["Январь", 31];
-        case 1: return ["Февраль", 28];
-        case 2: return ["Март", 31];
-        case 3: return ["Апрель", 30];
-        case 4: return ["Май", 31];
-        case 5: return ["Июнь", 30];
-        case 6: return ["Июль", 31];
-        case 7: return ["Август", 31];
-        case 8: return ["Сентябрь", 30];
-        case 9: return ["Октябрь", 31];
-        case 10: return ["Ноябрь", 30];
-        case 11: return ["Декабрь", 31];
-    }
-}
+const Month = {
+    January: 0,
+    February: 1,
+    March: 2,
+    April: 3,
+    May: 4,
+    June: 5,
+    July: 6,
+    August: 7,
+    September: 8,
+    October: 9,
+    Novermber: 10,
+    December: 11
+};
 
-export const Calendar = () => {
+export function areEqual(a, b) {
+    if (!a || !b) return false;
+
     return (
-        <div className="calendar">
-            <img className="left-arrow arrow" src={leftArrow}/>
-            <div className="card-day__wrapper">
-                {creatingDate(11).map((arr, id) => <CardDay id={id} day={arr[0]} date={arr[1]} month={arr[2]}/>)}
-            </div>
-            <img className="right-arrow arrow" src={rightArrow}/>
-        </div>
-    )
+        a.getFullYear() === b.getFullYear() &&
+        a.getMonth() === b.getMonth() &&
+        a.getDate() === b.getDate()
+    );
+}
+
+export function isLeapYear(year) {
+    return !((year % 4) || (!(year % 100) && (year % 400)));
+}
+
+export function getDaysInMonth(date) {
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    const daysInMonth = DAYS_IN_MONTH[month];
+    
+    if (isLeapYear(year) && month === Month.February) {
+        return daysInMonth + 1;
+    } else {
+        return daysInMonth;
+    }
+}
+
+export function getDayOfWeek(date) {
+    const dayOfWeek = date.getDay();
+
+    return WEEK_DAYS_FROM_MONDAY[dayOfWeek];
+}
+
+export function getMonthData(year, month) {
+    const result = [];
+    const date = new Date(year, month);
+    const daysInMonth = getDaysInMonth(date);
+    const monthStartsOn = getDayOfWeek(date);
+    let day = 1;
+
+    for (let i = 0; i < (daysInMonth + monthStartsOn) / DAYS_IN_WEEK; i++) {
+        result[i] = [];
+        
+        for (let j = 0; j < DAYS_IN_WEEK; j++) {
+            if ((i === 0 && j < monthStartsOn) || day > daysInMonth) {
+                result[i][j] = undefined;
+            } else {
+                result[i][j] = new Date(year, month, day++);
+            }
+        }
+    }
+
+    return result;
 }
