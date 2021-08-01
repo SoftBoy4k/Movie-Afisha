@@ -3,6 +3,7 @@
 }
 
 .calendar{
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -12,4 +13,11 @@
 
 .arrow{
     max-width: 50px;
+}
+
+.card-day__wrapper{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

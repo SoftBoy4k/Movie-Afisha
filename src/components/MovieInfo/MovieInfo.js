@@ -40,7 +40,7 @@ export const MovieInfo = ({name,
                 </div>
             </div>
 
-            <Cinemas kalinina = {cinimaKalinina} october = {cinimaOctober} mir={cinimaMir}/>
+            <Cinemas movieName={name} kalinina = {cinimaKalinina} october = {cinimaOctober} mir={cinimaMir}/>
         </>
     )
 }

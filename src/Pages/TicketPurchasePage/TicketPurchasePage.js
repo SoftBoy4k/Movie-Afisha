@@ -5,7 +5,7 @@ import './TicketPurchasePage.css'
 export const TicketPurchasePage = () => {
     return (
         <>
-            <h2>Покупка билетов</h2>
+            <h2 className="header-text__ticket-purchase-page">Покупка билетов</h2>
             <PurchaseTickets/>
         </>
     )

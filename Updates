@@ -1,0 +1,53 @@
+[33mcommit 61e5ebd185afab2de05938b44465fb5f72f501ac[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Wed Jul 7 13:03:32 2021 +0300
+
+    Creat a ticket purchase menu
+
+[33mcommit 26e2a4d04c031bf4ab4ea3aca5a497780a8e8d81[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Tue Jun 22 17:52:34 2021 +0300
+
+    Creating MoviePage
+
+[33mcommit 6b8bd646a5e432650261a74f6ee7b5b9d49e42ae[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Tue Jun 22 11:02:16 2021 +0300
+
+    Creating a calendar
+
+[33mcommit 09ff2a5c8b7313ab587bd3d2b575da917546e33c[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Sat Jun 19 11:13:25 2021 +0300
+
+    Creating header
+
+[33mcommit 027d6417089085809ac4d3716a8e7ccf09282cd0[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Thu Jun 17 23:14:38 2021 +0300
+
+    Creating a transition by clicking on a movie
+
+[33mcommit e17f4a1120cb18c5cb5b8d26407971a74fe1eb4b[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Mon Jun 14 18:10:12 2021 +0300
+
+    creating movie store and movie poster
+
+[33mcommit 507e75d1d85b125c7c8346fbbb7a91e8443ce120[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Sat Jun 12 19:39:07 2021 +0300
+
+    first routing update
+
+[33mcommit 336efa3083934c57c68d16b89c0488d6dcd69d97[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Sat Jun 12 19:27:22 2021 +0300
+
+    creating routing
+
+[33mcommit 7c16cb25a0f7e0d129769a2abe2514052fa8d8f4[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Vladislav <vladislavpimoshenko@gmail.com>
+Date:   Mon Jun 7 20:28:44 2021 +0300
+
+    first commit

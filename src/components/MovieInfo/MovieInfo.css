@@ -32,3 +32,21 @@
 .content{
     margin: 0 40px;
 }
+
+@media (max-width: 620px) {
+    .content{
+        margin: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .content{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 319px) {
+    .content{
+        font-size: 10px;
+    }
+}

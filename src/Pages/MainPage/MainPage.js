@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {movies} from '../../store/moviesStore';
 import {MoviePoster} from '../../components/MoviePoster/MoviePoster';
-import { Calendar } from '../../components/Calendar/Calendar'
+import {Calendar}  from '../../components/Calendar/Calendar'
 import './MainPage.css'
 
 export default class MainPage extends Component {

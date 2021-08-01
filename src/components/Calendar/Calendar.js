@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardDay } from './CardDay/CardDay';
 import './Calendar.css'
-import leftArrow from './left-arrow.png'
+import leftArrow from './imgForCalendar/left-arrow.png'
 import rightArrow from './imgForCalendar/right-arrow.png'
 
 function creatingDate (n=0) {
@@ -51,7 +51,9 @@ export const Calendar = () => {
     return (
         <div className="calendar">
             <img className="left-arrow arrow" src={leftArrow}/>
-            {creatingDate(11).map((arr) => <CardDay day={arr[0]} date={arr[1]} month={arr[2]}/>)}
+            <div className="card-day__wrapper">
+                {creatingDate(11).map((arr, id) => <CardDay id={id} day={arr[0]} date={arr[1]} month={arr[2]}/>)}
+            </div>
             <img className="right-arrow arrow" src={rightArrow}/>
         </div>
     )
