@@ -10,7 +10,7 @@ export default class MainPage extends Component {
 
         this.state = {
             movies: movies,
-            date: null
+            date: new Date()
         }
     }
 
@@ -25,7 +25,7 @@ export default class MainPage extends Component {
                     <Calendar onChange={this.handleDateChange}/>
                 </div>
                 <div className="movie">
-                    {this.state.movies.map(({id, ...otherProps}) => <MoviePoster key={id} {...otherProps}/>)}
+                    {this.state.movies.map(({id, ...otherProps}) => <MoviePoster key={id} date={[date.getDate(), date.getMonth()+1, date.getFullYear()]} {...otherProps}/>)}
                 </div>
             </>
         )

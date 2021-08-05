@@ -43,38 +43,38 @@ export default class PurchTickets extends Component {
     }
 
     render() {
-        const {history, match: {url, params:{time, cinema, movieName}}} = this.props;     
+        const {history, match: {url, params:{time, cinema, movieName, date}}} = this.props; 
         return (
             <>
                 <div className="purchase-tickets">
                     <div className="purchase-tickets-btns">
                         <button 
                             className={
-                                url === `/${movieName}/${cinema}/${time}/purchaseTickets/seatSelection` ? 
+                                url === `/${movieName}/${date}/${cinema}/${time}/purchaseTickets/seatSelection` ? 
                                 "purchase-tickets__btn active" : 
                                 "purchase-tickets__btn"
                             } 
                             onClick={
-                                () => {history.push(`/${movieName}/${cinema}/${time}/purchaseTickets/seatSelection`)}
+                                () => {history.push(`/${movieName}/${date}/${cinema}/${time}/purchaseTickets/seatSelection`)}
                             }>
                                 Выбор места
                         </button>
 
                         <button 
                             className={ 
-                                url === `/${movieName}/${cinema}/${time}/purchaseTickets/payment` ? 
+                                url === `/${movieName}/${date}/${cinema}/${time}/purchaseTickets/payment` ? 
                                 "purchase-tickets__btn active" : 
                                 "purchase-tickets__btn"
                             } 
                             onClick={
-                                () => {history.push(`/${movieName}/${cinema}/${time}/purchaseTickets/payment`)}
+                                () => {history.push(`/${movieName}/${date}/${cinema}/${time}/purchaseTickets/payment`)}
                             }>       
                                 Оплата
                         </button>
                     </div>
-                    {url === `/${movieName}/${cinema}/${time}/purchaseTickets/seatSelection` ? 
+                    {url === `/${movieName}/${date}/${cinema}/${time}/purchaseTickets/seatSelection` ? 
                         <SeatSelectionMenu cinema = {cinema} price={this.CheckPrice(movieName).price} activeNum = {this.state.activeNum} totalPrice = {this.state.totalPrice} ClickHandler = {this.ClickHandler}/> : 
-                        <ShoppingMenu name={movieName} time={time} price={this.CheckPrice(movieName).price} activeNum = {this.state.activeNum} totalPrice = {this.state.totalPrice} ClickHandler = {this.ClickHandler}/>
+                        <ShoppingMenu name={movieName} date={date} time={time} price={this.CheckPrice(movieName).price} activeNum = {this.state.activeNum} totalPrice = {this.state.totalPrice} ClickHandler = {this.ClickHandler}/>
                     }
                 </div>
             </>

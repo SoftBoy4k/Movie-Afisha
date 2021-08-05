@@ -11,10 +11,11 @@
 
 .calendar{
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 315px) {
     .calendar{
-        margin-left: 0;
+        margin-left: 10px;
     }
 }

@@ -33,6 +33,15 @@
     margin: 0 40px;
 }
 
+.description{
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.description-header{
+    margin-bottom: 10px;
+}
+
 @media (max-width: 620px) {
     .content{
         margin: 0;
@@ -48,5 +57,9 @@
 @media (max-width: 319px) {
     .content{
         font-size: 10px;
+    }
+
+    .movie-info__img{
+        width: 260px;
     }
 }

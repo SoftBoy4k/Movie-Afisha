@@ -17,10 +17,11 @@
 .calendar-content th {
     vertical-align: middle;
     text-align: center;
-    height: 36px;
+    height: 15px;
 }
 
 .day {
+    font-size: 14px;
     padding: 4px 8px;
     vertical-align: middle;
     text-align: center;

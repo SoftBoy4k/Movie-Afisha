@@ -31,7 +31,6 @@ export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => 
                         <div className="place"><span className={activeNum.includes('10.1') ? "span activeE" : "span"} onClick={ClickHandler} data-place="10.1" data-price={price}>10</span></div>
                         <div className="place"><span className={activeNum.includes('11.1') ? "span activeE" : "span"} onClick={ClickHandler} data-place="11.1" data-price={price}>11</span></div>
                         <div className="place"><span className={activeNum.includes('12.1') ? "span activeE" : "span"} onClick={ClickHandler} data-place="12.1" data-price={price}>12</span></div>
-                        <div className="place"><span className={activeNum.includes('13.1') ? "span activeE" : "span"} onClick={ClickHandler} data-place="13.1" data-price={price}>13</span></div>
                     </div>
 
                     <div className="place-row">
@@ -52,7 +51,6 @@ export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => 
                         <div className="place"><span className={activeNum.includes('13.2') ? "span activeE" : "span"} onClick={ClickHandler} data-place="13.2" data-price={price}>13</span></div>
                         <div className="place"><span className={activeNum.includes('14.2') ? "span activeE" : "span"} onClick={ClickHandler} data-place="14.2" data-price={price}>14</span></div>
                         <div className="place"><span className={activeNum.includes('15.2') ? "span activeE" : "span"} onClick={ClickHandler} data-place="15.2" data-price={price}>15</span></div>
-                        <div className="place"><span className={activeNum.includes('16.2') ? "span activeE" : "span"} onClick={ClickHandler} data-place="16.2" data-price={price}>16</span></div>
                     </div>
 
                     <div className="place-row">
@@ -71,7 +69,6 @@ export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => 
                         <div className="place"><span className={activeNum.includes('13.3') ? "span activeE" : "span"} onClick={ClickHandler} data-place="13.3" data-price={price}>13</span></div>
                         <div className="place"><span className={activeNum.includes('14.3') ? "span activeE" : "span"} onClick={ClickHandler} data-place="14.3" data-price={price}>14</span></div>
                         <div className="place"><span className={activeNum.includes('15.3') ? "span activeE" : "span"} onClick={ClickHandler} data-place="15.3" data-price={price}>15</span></div>
-                        <div className="place"><span className={activeNum.includes('16.3') ? "span activeE" : "span"} onClick={ClickHandler} data-place="16.3" data-price={price}>16</span></div>
                     </div>
 
                     <div className="place-row">
@@ -90,7 +87,6 @@ export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => 
                         <div className="place"><span className={activeNum.includes('13.4') ? "span activeE" : "span"} onClick={ClickHandler} data-place="13.4" data-price={price}>13</span></div>
                         <div className="place"><span className={activeNum.includes('14.4') ? "span activeE" : "span"} onClick={ClickHandler} data-place="14.4" data-price={price}>14</span></div>
                         <div className="place"><span className={activeNum.includes('15.4') ? "span activeE" : "span"} onClick={ClickHandler} data-place="15.4" data-price={price}>15</span></div>
-                        <div className="place"><span className={activeNum.includes('16.4') ? "span activeE" : "span"} onClick={ClickHandler} data-place="16.4" data-price={price}>16</span></div>
                     </div>
 
                     <div className="place-row">
@@ -108,7 +104,6 @@ export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => 
                         <div className="place"><span className={activeNum.includes('12.5') ? "span activeE" : "span"} onClick={ClickHandler} data-place="12.5" data-price={price}>12</span></div>
                         <div className="place"><span className={activeNum.includes('13.5') ? "span activeE" : "span"} onClick={ClickHandler} data-place="13.5" data-price={price}>13</span></div>
                         <div className="place"><span className={activeNum.includes('14.5') ? "span activeE" : "span"} onClick={ClickHandler} data-place="14.5" data-price={price}>14</span></div>
-                        <div className="place"><span className={activeNum.includes('15.5') ? "span activeE" : "span"} onClick={ClickHandler} data-place="15.5" data-price={price}>15</span></div>
                     </div>
 
                     <div className="place-row">
@@ -126,7 +121,6 @@ export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => 
                         <div className="place"><span className={activeNum.includes('12.6') ? "span activeE" : "span"} onClick={ClickHandler} data-place="12.6" data-price={price}>12</span></div>
                         <div className="place"><span className={activeNum.includes('13.6') ? "span activeE" : "span"} onClick={ClickHandler} data-place="13.6" data-price={price}>13</span></div>
                         <div className="place"><span className={activeNum.includes('14.6') ? "span activeE" : "span"} onClick={ClickHandler} data-place="14.6" data-price={price}>14</span></div>
-                        <div className="place"><span className={activeNum.includes('15.6') ? "span activeE" : "span"} onClick={ClickHandler} data-place="15.6" data-price={price}>15</span></div>
                     </div>
 
                     <div className="place-row">
@@ -144,7 +138,6 @@ export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => 
                         <div className="place"><span className={activeNum.includes('12.7') ? "span activeE" : "span"} onClick={ClickHandler} data-place="12.7" data-price={price}>12</span></div>
                         <div className="place"><span className={activeNum.includes('13.7') ? "span activeE" : "span"} onClick={ClickHandler} data-place="13.7" data-price={price}>13</span></div>
                         <div className="place"><span className={activeNum.includes('14.7') ? "span activeE" : "span"} onClick={ClickHandler} data-place="14.7" data-price={price}>14</span></div>
-                        <div className="place"><span className={activeNum.includes('15.7') ? "span activeE" : "span"} onClick={ClickHandler} data-place="15.7" data-price={price}>15</span></div>
                     </div>
 
                     <div className="place-row">
@@ -166,9 +159,6 @@ export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => 
                         <div className="place"><span className={activeNum.includes('16.8') ? "span activeE" : "span"} onClick={ClickHandler} data-place="16.8" data-price={price}>16</span></div>
                         <div className="place"><span className={activeNum.includes('17.8') ? "span activeE" : "span"} onClick={ClickHandler} data-place="17.8" data-price={price}>17</span></div>
                         <div className="place"><span className={activeNum.includes('18.8') ? "span activeE" : "span"} onClick={ClickHandler} data-place="18.8" data-price={price}>18</span></div>
-                        <div className="place"><span className={activeNum.includes('19.8') ? "span activeE" : "span"} onClick={ClickHandler} data-place="19.8" data-price={price}>19</span></div>
-                        <div className="place"><span className={activeNum.includes('20.8') ? "span activeE" : "span"} onClick={ClickHandler} data-place="20.8" data-price={price}>20</span></div>
-                        <div className="place"><span className={activeNum.includes('21.8') ? "span activeE" : "span"} onClick={ClickHandler} data-place="21.8" data-price={price}>21</span></div>
                     </div>
 
                 </div>

@@ -5,7 +5,7 @@
 }
 
 .seat-place__numbers  p{
-    margin-bottom: 11px;
+    margin-bottom: 12px;
 }
 
 .seat-place__place{
@@ -104,7 +104,7 @@
 
     .seat-place__numbers  p{
         font-size: 13px;
-        margin-bottom: 12px;
+        margin-bottom: 11px;
     }
 
     .seat-place{

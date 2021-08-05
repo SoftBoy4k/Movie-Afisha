@@ -14,6 +14,8 @@ export const MovieInfo = ({name,
                         cinimaKalinina,
                         cinimaOctober,
                         cinimaMir,
+                        description,
+                        date
                     }) => {
     return (
         <>
@@ -40,7 +42,14 @@ export const MovieInfo = ({name,
                 </div>
             </div>
 
-            <Cinemas movieName={name} kalinina = {cinimaKalinina} october = {cinimaOctober} mir={cinimaMir}/>
+            <Cinemas movieName={name} date={date} kalinina = {cinimaKalinina} october = {cinimaOctober} mir={cinimaMir}/>
+
+            <div className="description">
+                <h3 className="description-header">Описание:</h3>
+                <p className="description-text">
+                    {description}
+                </p>
+            </div>
         </>
     )
 }
