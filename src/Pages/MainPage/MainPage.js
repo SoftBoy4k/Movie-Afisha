@@ -25,7 +25,7 @@ export default class MainPage extends Component {
                     <Calendar onChange={this.handleDateChange}/>
                 </div>
                 <div className="movie">
-                    {this.state.movies.map(({id, ...otherProps}) => <MoviePoster key={id} date={[date.getDate(), date.getMonth()+1, date.getFullYear()]} {...otherProps}/>)}
+                    {this.state.movies.map(({id, ...otherProps}) => <MoviePoster key={id} {...otherProps}/>)}
                 </div>
             </>
         )

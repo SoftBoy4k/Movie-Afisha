@@ -1,9 +1,12 @@
 import React from 'react';
 import classnames from 'classnames';
 import * as calendar from './Calendar';
+import { connect } from 'react-redux';
+import { changeDate } from '../../redux/actions';
 import './index.css';
 
-export default class Calendar extends React.Component {
+
+class Calendar extends React.Component {
     static defaultProps = {
         date: new Date(),
         years: [2021, 2022],
@@ -55,11 +58,17 @@ export default class Calendar extends React.Component {
         this.setState({ selectedDate: date });
         
         this.props.onChange(date);
+        this.props.changeDate([date.getDate(), date.getMonth()+1, date.getFullYear()])
     };
+
+    componentDidMount(){
+        const {date} = this.state
+        this.props.changeDate([date.getDate(), date.getMonth()+1, date.getFullYear()])
+    }
 
     render() {
         const { years, monthNames, weekDayNames } = this.props;
-        const { currentDate, selectedDate } = this.state;
+        const { currentDate, selectedDate} = this.state;
 
         const monthData = calendar.getMonthData(this.year, this.month);
 
@@ -123,3 +132,9 @@ export default class Calendar extends React.Component {
         );
     }
 }
+
+const mapDispatchToProps = {
+    changeDate
+}
+
+export default connect(null, mapDispatchToProps)(Calendar)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cinemas } from '../Cinemas/Cinemas';
+import Cinemas from '../Cinemas/Cinemas';
 import './MovieInfo.css'
 
 export const MovieInfo = ({name,
@@ -15,7 +15,6 @@ export const MovieInfo = ({name,
                         cinimaOctober,
                         cinimaMir,
                         description,
-                        date
                     }) => {
     return (
         <>
@@ -42,7 +41,7 @@ export const MovieInfo = ({name,
                 </div>
             </div>
 
-            <Cinemas movieName={name} date={date} kalinina = {cinimaKalinina} october = {cinimaOctober} mir={cinimaMir}/>
+            <Cinemas movieName={name} kalinina = {cinimaKalinina} october = {cinimaOctober} mir={cinimaMir}/>
 
             <div className="description">
                 <h3 className="description-header">Описание:</h3>
