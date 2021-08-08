@@ -1,0 +1,19 @@
+.movie-inner{
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
+    cursor: pointer;
+
+    .movie-img{
+        width: 100%;
+    }
+
+    .movie-date, .movie-price{
+        color:rgb(141, 141, 141);
+    }
+
+    &:hover .movie-date,
+    &:hover .movie-price{
+        color: black;
+    }
+}

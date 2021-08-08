@@ -3,7 +3,7 @@ import { SeatSelectionMenu } from './SeatSelectionMenu/SeatSelectionMenu';
 import ShoppingMenu from './ShoppingMenu/ShoppingMenu'
 import { withRouter } from 'react-router-dom';
 import { movies } from '../../store/moviesStore';
-import './PurchaseTickets.css';
+import './Style/PurchaseTickets.scss';
 
 export default class PurchTickets extends Component {
     state = {
@@ -45,39 +45,37 @@ export default class PurchTickets extends Component {
     render() {
         const {history, match: {url, params:{cinema, movieName}}} = this.props; 
         return (
-            <>
-                <div className="purchase-tickets">
-                    <div className="purchase-tickets-btns">
-                        <button 
-                            className={
-                                url === `/${movieName}/${cinema}/purchaseTickets/seatSelection` ? 
-                                "purchase-tickets__btn active" : 
-                                "purchase-tickets__btn"
-                            } 
-                            onClick={
-                                () => {history.push(`/${movieName}/${cinema}/purchaseTickets/seatSelection`)}
-                            }>
-                                Выбор места
-                        </button>
+            <div className="purchase-tickets">
+                <div className="purchase-tickets-btns">
+                    <button 
+                        className={
+                            url === `/${movieName}/${cinema}/purchaseTickets/seatSelection` ? 
+                            "purchase-tickets__btn active" : 
+                            "purchase-tickets__btn"
+                        } 
+                        onClick={
+                            () => {history.push(`/${movieName}/${cinema}/purchaseTickets/seatSelection`)}
+                        }>
+                            Выбор места
+                    </button>
 
-                        <button 
-                            className={ 
-                                url === `/${movieName}/${cinema}/purchaseTickets/payment` ? 
-                                "purchase-tickets__btn active" : 
-                                "purchase-tickets__btn"
-                            } 
-                            onClick={
-                                () => {history.push(`/${movieName}/${cinema}/purchaseTickets/payment`)}
-                            }>       
-                                Оплата
-                        </button>
-                    </div>
-                    {url === `/${movieName}/${cinema}/purchaseTickets/seatSelection` ? 
-                        <SeatSelectionMenu cinema = {cinema} price={this.CheckPrice(movieName).price} activeNum = {this.state.activeNum} totalPrice = {this.state.totalPrice} ClickHandler = {this.ClickHandler}/> : 
-                        <ShoppingMenu name={movieName} price={this.CheckPrice(movieName).price} activeNum = {this.state.activeNum} totalPrice = {this.state.totalPrice} ClickHandler = {this.ClickHandler}/>
-                    }
+                    <button 
+                        className={ 
+                            url === `/${movieName}/${cinema}/purchaseTickets/payment` ? 
+                            "purchase-tickets__btn active" : 
+                            "purchase-tickets__btn"
+                        } 
+                        onClick={
+                            () => {history.push(`/${movieName}/${cinema}/purchaseTickets/payment`)}
+                        }>       
+                            Оплата
+                    </button>
                 </div>
-            </>
+                {url === `/${movieName}/${cinema}/purchaseTickets/seatSelection` ? 
+                    <SeatSelectionMenu cinema = {cinema} price={this.CheckPrice(movieName).price} activeNum = {this.state.activeNum} totalPrice = {this.state.totalPrice} ClickHandler = {this.ClickHandler}/> : 
+                    <ShoppingMenu name={movieName} price={this.CheckPrice(movieName).price} activeNum = {this.state.activeNum} totalPrice = {this.state.totalPrice} ClickHandler = {this.ClickHandler}/>
+                }
+            </div>
         )
     }
 }

@@ -1,0 +1,52 @@
+.purchase-tickets {
+  max-width: 55%;
+  background-color: #bcbcbc;
+  margin: 0 auto;
+}
+
+.purchase-tickets__btn {
+  width: 50%;
+  height: 40px;
+  background-color: lightgrey;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.purchase-tickets__btn.active {
+  background-color: #FFF27E;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+  .purchase-tickets {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 800px) {
+  .purchase-tickets {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 700px) {
+  .purchase-tickets {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .purchase-tickets {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .purchase-tickets__btn {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=PurchaseTickets.css.map */

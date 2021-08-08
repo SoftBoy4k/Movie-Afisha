@@ -2,7 +2,7 @@ import React from 'react';
 import { CinemaKalinina } from './Cinemas/CinemaKalinina';
 import  { CinemaOctober }  from './Cinemas/CinemaOctober';
 import { CinemaMir } from './Cinemas/CinemaMir';
-import './SeatSelectionMenu.css';
+import './Style/SeatSelectionMenu.scss';
 
 export const SeatSelectionMenu = ({cinema, ...otherProps}) => {
     return (

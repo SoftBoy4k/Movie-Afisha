@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kCAAkC,CAAA;EAC9B,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "TicketPurchasePage.scss"
+    ],
+    "names": [],
+    "file": "TicketPurchasePage.css"
+}

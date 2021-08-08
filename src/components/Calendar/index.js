@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import * as calendar from './Calendar';
 import { connect } from 'react-redux';
 import { changeDate } from '../../redux/actions';
-import './index.css';
+import './Style/index.scss';
 
 
 class Calendar extends React.Component {

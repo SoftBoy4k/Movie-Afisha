@@ -1,6 +1,6 @@
 import React from 'react';
 import { PurchaseTickets } from '../../components/PurchaseTickets/PurchaseTickets';
-import './TicketPurchasePage.css'
+import './Style/TicketPurchasePage.scss'
 
 export const TicketPurchasePage = () => {
     return (

@@ -1,21 +1,23 @@
+@import "../../../DefaultColors/defaultColors.scss";
+
 .purchase-tickets{
     max-width: 55%;
     background-color: #bcbcbc;
     margin: 0 auto;
-}
 
-.purchase-tickets__btn{
-    width: 50%;
-    height: 40px;
-    background-color: #d5d4d4;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
-}
+    &__btn{
+        width: 50%;
+        height: 40px;
+        background-color: $grey-color;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
 
-.purchase-tickets__btn.active{
-    background-color: #FFF27E;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+        &.active{
+            background-color: $main-color;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+        }
+    }
 }
 
 @media (max-width: 900px){

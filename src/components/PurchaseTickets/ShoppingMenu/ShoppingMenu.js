@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import CardForm from '../../CardForm/CardForm'
 import { Modal } from './Modal/Modal'
 import { ReservedTickets } from './ReservedTickets/ReservedTickets'
-import './ShoppingMenu.css'
+import './Style/ShoppingMenu.scss'
 
 const ShoppingMenu = ({name, activeNum, totalPrice, time, ClickHandler, price, date}) => {
 
@@ -14,7 +14,7 @@ const ShoppingMenu = ({name, activeNum, totalPrice, time, ClickHandler, price, d
     }
 
     return (
-        <div className="shopping-menu__wrapper">
+        <div className="shopping-menu">
             <div className="shopping-menu__header-text">
                 <p onClick={ClickHandlerRemove}>{name}</p>
                 <p>{date}</p>

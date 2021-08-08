@@ -1,0 +1,73 @@
+@import "../../../DefaultColors/defaultColors.scss";
+
+.card-form{
+    max-width: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .card-label{
+        font-size: 13px;
+    }
+
+    .card-input{
+        width: 330px;
+        height: 40px;
+
+        &.small{
+            width: 160px;
+        }
+    }
+
+    .card-btn{
+        margin: 10px auto;
+        width: 100px;
+        height: 40px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        transition: 0.2s ease;
+        border: none;
+        cursor: pointer;
+        background-color: #fff;
+
+        &:hover{
+            background-color: $main-color;
+            border: none;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .card-form{
+        width: 270px;
+
+        .card-input{
+            width: 270px;
+            height: 30px;
+
+            &.small{
+                width: 130px;
+            }
+        }
+
+        .card-btn{
+            width: 80px;
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .card-form{
+        width: 250px;
+
+        .card-input{
+            width: 250px;
+            height: 25px;
+
+            &.small{
+                width: 250px;
+            }
+        }
+    }
+}

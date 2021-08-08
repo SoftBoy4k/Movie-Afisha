@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;CASlB;;AAPI,AAAD,iBAAU,CAAA;EACN,KAAK,EAAE,GAAG;CACb;;AAEA,AAAD,aAAM,CAAA;EACF,MAAM,EAAE,OAAO;CAClB;;AAGL,AAAA,EAAE,CAAA;EACE,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "ResevedTickets.scss"
+    ],
+    "names": [],
+    "file": "ResevedTickets.css"
+}

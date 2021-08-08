@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-header {
+  background-color: #FFF27E;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Ruda', sans-serif;
+}
+
+.main-header .main-logo {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.main-header .main-logo .logo-inner {
+  color: black;
+}
+/*# sourceMappingURL=Header.css.map */

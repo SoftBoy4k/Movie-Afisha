@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cinema.css'
+import './Style/Cinema.scss'
 
 export const CinemaKalinina = ({activeNum, totalPrice, ClickHandler, price}) => {
     return (

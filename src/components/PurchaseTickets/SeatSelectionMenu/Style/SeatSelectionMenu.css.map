@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,EAAE;CACpB;;AAED,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AAAA,OAAO,CAAA;IACH,OAAO,EAAE,QAAQ;GACpB",
+    "sources": [
+        "SeatSelectionMenu.scss"
+    ],
+    "names": [],
+    "file": "SeatSelectionMenu.css"
+}

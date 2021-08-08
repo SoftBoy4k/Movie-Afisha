@@ -1,0 +1,22 @@
+.movie-inner {
+  width: 100%;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.movie-inner .movie-img {
+  width: 100%;
+}
+
+.movie-inner .movie-date, .movie-inner .movie-price {
+  color: #8d8d8d;
+}
+
+.movie-inner:hover .movie-date,
+.movie-inner:hover .movie-price {
+  color: black;
+}
+/*# sourceMappingURL=MoviePoster.css.map */

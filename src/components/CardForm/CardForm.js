@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './CardForm.css'
+import './Style/CardForm.scss'
 
 export default class LoginForm extends Component {
     state = {
@@ -40,11 +40,11 @@ export default class LoginForm extends Component {
                      </div>
                      <div className="card-elem">
                          <label className="card-label" for="expiration">Срок действия(мм/гг)</label><br/>
-                         <input className="card-input card-input__small" value={this.state.expyear} type="text" id="expyear" name="expyear" placeholder="09/25" onChange={this.handelChange} required/>
+                         <input className="card-input card-input small" value={this.state.expyear} type="text" id="expyear" name="expyear" placeholder="09/25" onChange={this.handelChange} required/>
                      </div>
                      <div className="card-elem">
                          <label className="card-label" for="cvv">CV-код</label><br/>
-                         <input className="card-input card-input__small" value={this.state.cvv} type="text" id="cvv" name="cvv" placeholder="352" onChange={this.handelChange} required/>
+                         <input className="card-input card-input small" value={this.state.cvv} type="text" id="cvv" name="cvv" placeholder="352" onChange={this.handelChange} required/>
                      </div>
                      <button className="card-btn" onClick={() => this.handleClickOnSubmit(setModalActive)}>Click</button>
              </form>

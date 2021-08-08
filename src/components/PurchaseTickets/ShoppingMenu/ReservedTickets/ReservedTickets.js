@@ -1,12 +1,12 @@
 import React from 'react'
 import cross from './cross.png'
-import './ResevedTickets.css'
+import './Style/ResevedTickets.scss'
 
 export const ReservedTickets = ({placeTickets, numTickets, ClickHandlerRemove, price}) => {
     return (
         <>
             <hr/>
-            <div className="tickets__wrapper" data-place={`${placeTickets[0]}.${placeTickets[1]}`}>
+            <div className="tickets" data-place={`${placeTickets[0]}.${placeTickets[1]}`}>
                 <p className="tickets__num">{numTickets}</p>
                 <div className="tickets__content">
                     <p>Стандартный билет</p>

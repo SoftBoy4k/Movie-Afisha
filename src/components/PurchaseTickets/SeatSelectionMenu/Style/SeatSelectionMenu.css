@@ -1,0 +1,11 @@
+.cinema {
+  padding: 20px;
+  margin-bottom: 3%;
+}
+
+@media (max-width: 440px) {
+  .cinema {
+    padding: 20px 5px;
+  }
+}
+/*# sourceMappingURL=SeatSelectionMenu.css.map */

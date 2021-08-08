@@ -1,18 +1,19 @@
-.tickets__wrapper{
+.tickets{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-}
-.tickets__content{
-    width: 85%;
+
+    &__content{
+        width: 85%;
+    }
+
+    &__img{
+        cursor: pointer;
+    }
 }
 
 hr{
     margin: 10px 0;
-}
-
-.tickets__img{
-    cursor: pointer;
 }

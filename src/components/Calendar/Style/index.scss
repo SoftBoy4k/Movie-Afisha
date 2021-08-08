@@ -1,0 +1,55 @@
+@import "../../../DefaultColors/defaultColors.scss";
+
+.calendar-content{
+    header {
+        display: flex;
+        margin: 8px 0;
+    }
+    
+    header button,
+    header select {
+        margin: 0 4px;
+    }
+    
+    table {
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+    
+    th {
+        vertical-align: middle;
+        text-align: center;
+        height: 15px;
+    }
+    
+    .day {
+        font-size: 14px;
+        padding: 4px 8px;
+        vertical-align: middle;
+        text-align: center;
+        border: 2px solid transparent;
+        
+        &:hover {
+            background-color: $grey-color;
+            cursor: pointer;
+        }
+    }
+    
+    .selected {
+        border: 2px solid $calendar-color;
+    }
+    
+    .today {
+        background-color: $calendar-color;
+        color: white;
+
+        &:hover {
+            background-color: $calendar-color;
+        }
+
+        &.selected {
+            border: 2px solid $grey-color;
+        }
+    }
+}

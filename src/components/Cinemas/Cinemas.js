@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { changeTime } from '../../redux/actions';
-import './Cinemas.css'
+import './Style/Cinemas.scss'
 
 const cinemas = ({history, kalinina, october, mir, movieName, changeTime}) => {
     

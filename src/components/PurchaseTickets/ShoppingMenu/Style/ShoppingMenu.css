@@ -1,0 +1,27 @@
+.shopping-menu {
+  padding: 0 30px;
+}
+
+.shopping-menu__header-text {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.shopping-menu__header-text > p {
+  margin-top: 5px;
+}
+
+.shopping-menu__total-price {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+@media (max-width: 390px) {
+  .shopping-menu {
+    padding: 0 5px;
+  }
+  .shopping-menu__header-text {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=ShoppingMenu.css.map */

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {movies} from '../../store/moviesStore';
 import {MoviePoster} from '../../components/MoviePoster/MoviePoster';
 import Calendar  from '../../components/Calendar/index'
-import './MainPage.css'
+import './Style/MainPage.scss'
 
 export default class MainPage extends Component {
     constructor(props){

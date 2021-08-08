@@ -1,6 +1,6 @@
 import React from 'react'
 import smile from './smile.png'
-import "./Modal.css"
+import "./Style/Modal.scss"
 
 export const Modal = ({active, setActive}) => {
     return (
