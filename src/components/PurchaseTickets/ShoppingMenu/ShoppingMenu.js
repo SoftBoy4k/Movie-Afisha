@@ -31,7 +31,7 @@ const ShoppingMenu = ({name, activeNum, totalPrice, time, ClickHandler, price, d
 
 const mapStateToProps = state => {
     return ({
-        date: state.date.join('.'),
+        date: state.date,
         time: state.time
     })
 }

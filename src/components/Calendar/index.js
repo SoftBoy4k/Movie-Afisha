@@ -58,13 +58,8 @@ class Calendar extends React.Component {
         this.setState({ selectedDate: date });
         
         this.props.onChange(date);
-        this.props.changeDate([date.getDate(), date.getMonth()+1, date.getFullYear()])
+        this.props.changeDate(date.toLocaleDateString())
     };
-
-    componentDidMount(){
-        const {date} = this.state
-        this.props.changeDate([date.getDate(), date.getMonth()+1, date.getFullYear()])
-    }
 
     render() {
         const { years, monthNames, weekDayNames } = this.props;

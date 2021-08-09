@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Calendar from '../index'
-import calendarImg from "./calendar.png"
 import './Style/ButtonForCalendar.scss'
 
 export default class ButtonForCalendar extends Component {

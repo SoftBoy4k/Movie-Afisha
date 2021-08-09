@@ -34,7 +34,7 @@
   text-align: end;
 }
 
-.movie-info .content {
+.movie-info.content {
   margin: 0 40px;
 }
 

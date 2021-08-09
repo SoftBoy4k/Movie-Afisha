@@ -1,7 +1,7 @@
 import { CHANGE_DATE, CHANGE_TIME } from "./types"
 
 const initialState = {
-    date: [],
+    date: new Date().toLocaleDateString(),
     time: ''
 }
 
