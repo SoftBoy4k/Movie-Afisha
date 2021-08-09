@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {movies} from '../../store/moviesStore';
-import {MoviePoster} from '../../components/MoviePoster/MoviePoster';
-import Calendar  from '../../components/Calendar/index'
+import { movies } from '../../store/moviesStore';
+import { MoviePoster } from '../../components/MoviePoster/MoviePoster';
+import ButtonForCalendar from '../../components/Calendar/ButtonForCalendar/ButtonForCalendar';
 import './Style/MainPage.scss'
 
 export default class MainPage extends Component {
@@ -9,21 +9,14 @@ export default class MainPage extends Component {
         super(props)
 
         this.state = {
-            movies: movies,
-            date: new Date()
+            movies: movies
         }
     }
-
-    handleDateChange = date => this.setState({ date });
-
+    
     render() {
-        const { date } = this.state;
         return (
             <>
-                <div className="calendar">
-                    {date ? <p>Выбранная дата: {date.toLocaleDateString()}</p> : <p>Выберите дату:</p>}
-                    <Calendar onChange={this.handleDateChange}/>
-                </div>
+                <ButtonForCalendar /> 
                 <div className="movie">
                     {this.state.movies.map(({id, ...otherProps}) => <MoviePoster key={id} {...otherProps}/>)}
                 </div>
