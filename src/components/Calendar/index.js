@@ -48,15 +48,13 @@ class Calendar extends React.Component {
     handleSelectChange = () => {
         const year = this.yearSelect.value;
         const month = this.monthSelect.value;
-
         const date = new Date(year, month);
 
         this.setState({ date });
     };
 
     handleDayClick = date => {
-        this.setState({ selectedDate: date });
-        
+        this.setState({ selectedDate: date }); 
         this.props.onChange(date);
         this.props.changeDate(date.toLocaleDateString())
     };
@@ -64,7 +62,6 @@ class Calendar extends React.Component {
     render() {
         const { years, monthNames, weekDayNames } = this.props;
         const { currentDate, selectedDate} = this.state;
-
         const monthData = calendar.getMonthData(this.year, this.month);
 
         return (

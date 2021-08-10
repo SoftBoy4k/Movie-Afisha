@@ -9,6 +9,10 @@
   background-color: #fff;
 }
 
+.btn-calendar:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 355px) {
   .btn-calendar {
     width: 30px;

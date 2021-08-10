@@ -7,6 +7,10 @@
     left: 15px;
     background: no-repeat center/80% url(../calendar.png);
     background-color: #fff;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 355px) {
